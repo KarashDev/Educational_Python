@@ -18,14 +18,14 @@ print("How", "Are", "You", end="\n")
 intInString = str(x)
 stringInInt = int("35")
 
-input_num = input()
-print("Your input:", input_num)
+#input_num = input()
+#print("Your input:", input_num)
 
-input_num2 = input("Your second input: ")
-print(f"Second input was {input_num2}")
+#input_num2 = input("Your second input: ")
+#print(f"Second input was {input_num2}")
 
-print(int(input_num) + 25)
-print(str(input_num) + str(25))
+#print(int(input_num) + 25)
+#print(str(input_num) + str(25))
 
 var1, var2, var3 = 25, "hi", 125
 #var4, var5, var6 = input(), input(), input()
@@ -55,10 +55,41 @@ print(round(numToRound))
 print(round(numToRound, 2))
 print(round(numToRound, 1))
 
+q, w = 5, 10
+e, r = 15, 20
+print(q < w)
+print(q < w and e < r)
+print(q == w or e == r)
+print(q != w) #true
+print(not q == w) #true
+
+print(type(q), type(intInString))
+
+strX = "Hello, world!"
+substrX1 = "world"
+substrX2 = "123"
+print(substrX1 in strX) #true
+print(substrX2 in strX) #false 
+print(substrX2 not in strX) #true
+
+if "Hello" in strX:
+    print("Yes, Hello")
+elif "hello" in StrX:
+    print("Yes, hello")
+else: 
+    print("No")
 
 
+numberX = 220;
+if numberX < 200:
+    if numberX > 100:
+        print("Number greater than 100 and less than 200")
+    else:
+        print("Number less than 100")
+else:
+    print("Number greater than 200")
 
 
-
-
-
+stringX = "Hello!"
+for char in stringX:
+    print(char, end="")
